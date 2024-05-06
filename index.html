@@ -1,0 +1,100 @@
+<!-- FONT GOOGLE -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<!-- LINK CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- INICIO LP -->
+<div class="samsung_s24">
+  <div id="landing" class="wrapper-aspect-ratio landing">
+    <picture class="inner">
+      <source media="(max-width: 1100px)" srcset="./files/image/banner-mobile.png">
+      <img class="samsung_hero" src="./files/image/banner-desktop.png">
+    </picture>
+  </div>
+  <!--h1>Faça seu cadastro e <strong>ganhe um voucher de R$200*</strong> na compra de Acessórios, Fones Galaxy Buds e Galaxy Watches durante a Pré-Venda.</h1-->
+  <div class="form_s24">
+    <form id="galaxy_s24_form" action="https://relacionamento.fastshop.com.br/pub/rf" method="POST"
+      onsubmit="submitForm(event)">
+      <div class="input-radio">
+        <label>De um modo geral, como você avalia o evento? Sendo 5 a MELHOR nota e 1 a PIOR nota.</label><br />
+        <div class="container-radio">
+          <input type="radio" id="nota1" name="NOTA" value="1" class="avaliacao">
+          <label for="nota1">1</label>
+          <input type="radio" id="nota2" name="NOTA" value="2" class="avaliacao">
+          <label for="nota2">2</label>
+          <input type="radio" id="nota3" name="NOTA" value="3" class="avaliacao">
+          <label for="nota3">3</label>
+          <input type="radio" id="nota4" name="NOTA" value="4" class="avaliacao">
+          <label for="nota4">4</label>
+          <input type="radio" id="nota5" name="NOTA" value="5" class="avaliacao">
+          <label for="nota5">5</label>
+        </div>
+
+      </div>
+
+      <br /><br />
+      <div class="container-input-text">
+
+        <div class="col">
+          <div class="col">
+            <label for="fast_name">Nome Completo <span class="obrigatorio">*</span></label>
+            <input id="fast_name" type="text" name="FULL_NAME" placeholder="" required="">
+          </div>
+          <div class="col">
+            <label for="fast_email">E-mail <span class="obrigatorio">*</span></label>
+            <input id="fast_email" name="EMAIL_ADDRESS_" type="email" placeholder="" required="">
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col">
+            <label for="fast_cpf">CPF <span class="obrigatorio">*</span></label>
+            <input id="fast_cpf" name="CUSTOMER_ID_" type="text" maxlength="14" placeholder=""
+              onkeydown="javascript: fMasc( this, mCPF );" onblur="validarCPF(this);" required="">
+          </div>
+          <div class="col">
+            <label for="fast_telefone">Sugestões <span class="obrigatorio"></span></label>
+            <input id="fast_telefone" type="text" placeholder="" required="">
+          </div>
+        </div>
+      </div>
+
+      <P>Você aceita receber comunicados por e-mail, com ofertas e eventos da Fast Shop?</P>
+      <div class="privacidade">
+
+        <span class="obrigatorio">*Para saber mais sobre como a FAST SHOP respeita a sua privacidade, consulte a nossa
+        </span><span id="lbl-privacy-error" class="lbl-error"></span>
+        <a style="text-decoration:underline; color:#303030"
+          href="https://www.fastshop.com.br/web/i/politica_de_privacidade"> Política de privacidade. </a>
+      </div>
+      <div class="input-privacy">
+        <input type="radio" name="privacy" id="privacy" onclick="click_s_code('preregister', 'aceite-politica')"
+          required="">
+        <label for="privacy">Sim</label>
+        <input type="radio" name="privacy" id="privacy" onclick="click_s_code('preregister', 'aceite-politica')"
+          required="">
+        <label for="privacy">Não</label>
+      </div>
+
+
+      <div class="row">
+        <div class="col">
+          <button id="btn_form_gal" type="submit">Enviar</button>
+        </div>
+      </div>
+
+
+      <!-- TAG DA FERRAMENTA -->
+      <input type="hidden" name="ORIGEM" value="LP_Samsung_Linha_2024">
+      <input type="hidden" name="MOBILE_PERMISSION_STATUS_" value="I">
+      <input type="hidden" name="_ri_"
+        value="X0Gzc2X%3DAQjkPkSTYQGzcEblGzf8zcYfoG0pWdy24J64mkhGAUIafY1YNcnVwjpnpgHlpgneHmgJoXX0Gzc2X%3DAQjkPkSTYQGycAeHl7bogoKFMWotzb3zbq4mkhGAUIafY1YNcn">
+      <input type="hidden" name="ei" value="ENuvrf5wGtRu9Gg_a6V9BZU">
+      <!-- <input type="hidden" name="_ei_" value="ENYtotzw7fgiDr_1tM-Oh84"> -->
+      <input type="hidden" name="_di_" value="6eik36n2d0q1qb611c4dsn9oi3pvb3mg1pekhnjjvuq53v4fl000">
+    </form>
+  </div>
+
+</div>

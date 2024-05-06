@@ -1,0 +1,188 @@
+<style type="text/css">
+
+    .samsung_s24{width: 100%; height: auto; position: relative;background-color: #F6F0F0;box-sizing: border-box;}
+
+    .samsung_s24 .landing:before {content: "";padding-top: 48.125%; background:red}
+    .landing picture img{position: relative; width: 100%; height: auto;}
+
+/* CONTAINER PRINCIPAL */
+    .samsung_s24 {
+            width: 100%;
+            height: auto;
+            position: relative;
+            font-family: 'Open Sans', serif;
+        }
+/* INPUT DE AVALIÇÃO */
+    .input-radio{
+      text-align: center;
+    }
+    .container-radio{
+      display:flex;
+      align-items: center;
+      justify-content:center;
+      gap:1%;
+    }
+    input.avaliacao {
+  display: none; /* Oculta os inputs de radio padrão */
+}
+
+input.avaliacao + label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height:64px;
+  border: 1px solid #9d9d9d;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  text-align: center;
+  line-height: 58px;
+  margin-right: 10px;
+  font-size:2vw;
+  cursor: pointer;
+}
+
+    input.avaliacao + label::before {
+    content: attr(value); 
+}
+    .samsung_s24 h1{font-family: 'Open Sans';margin: 10px auto;font-size: 2vw;width: 70%;text-align: center; font-weight: 400;}    
+    .samsung_s24 p{font-family: 'Open Sans';font-weight:600;margin: 20px auto;font-size: 1.3vw;width: 99%;text-align: center;}   
+    .samsung_s24 .texto_legal{ width: 100%;}
+    .samsung_s24 .texto_legal p {width: 100%; font-size: 0.95vw; text-align: center; margin: 40px auto;}
+    .samsung_s24 .texto_legal a {color: #000;}
+
+        /* Estilos para o formulário */
+        .form_s24 {
+            position: relative;
+            width: 72%;
+            /* max-width: 1200px; */
+            margin: 2% auto;
+            padding: 35px;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        .container-input-text{
+          width: 70%;
+          margin: 0 auto;
+        }
+        .form_s24 label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 1.4vw;
+            font-family: 'Open Sans', serif;
+        }
+
+        .form_s24 input {
+            width: calc(100% - 6px);
+            height:48px;
+            margin-bottom: 20px;
+            padding: 8px;
+            border-radius: 24px;
+            color: #706f71;
+            border: 1px solid #8b8b8b;
+        }
+
+  
+         span.obrigatorio{margin-left:0%}
+        .samsung_s24 .form_s24 .privacidade{display: flex;flex-direction: row;font-size:0.9vw;margin: -11px 7px 40px 10px; justify-content:center;}
+        .samsung_s24 .form_s24 #privacy{margin-top: 5px; margin-bottom: 10px;padding: 0px;border-radius: 0px;color: #706f71;border: 1px solid #8b8b8b;}
+        .samsung_s24 .form_s24 .privacidade a{font-size: 1vw;margin-left: 0.3%}
+        .samsung_s24 .form_s24 input[type=checkbox]:checked:before{content: "";background-color: #3b99fc;width: 13px;height: 14px;margin: 0;padding: 0;}
+        .samsung_s24.container-input-text .obrigatorio{color: #303030; font-size: 1vw; font-family: 'Open Sans', serif; margin:0 -1%;}
+
+        .input-privacy{
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          gap:0%;
+          margin-bottom:40px;
+        }
+ /* TRATAMENTO DE INPUT DE PRIVACIDADE */
+   .input-privacy input[type="radio"] {
+  display: none; /* Oculta os inputs de radio padrão */
+}
+
+.input-privacy input[type="radio"]  {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.input-privacy input[type="radio"]:first-child + label {
+  margin-right: 6%; 
+}
+/* botao do formulario */
+      .form_s24 .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: -3%;
+        }
+
+        .form_s24 .col {
+            flex: 0 0 calc(45% - 6px); 
+            margin-right: 12px;
+          
+        }
+        .form_s24 button {
+            width: 79%;
+            height:48px;
+            padding: 10px;
+            border-radius: 35px;
+            border: none;
+            background-color: black;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 16% 11%;
+        }
+
+
+    #galaxy_s24_form button:hover {background-color: rgba(0, 0, 0, 0.205);transition: 200ms;}
+    #galaxy_s24_form button:hover {background-color: rgb(184, 184, 184);transition: 200ms;}
+
+
+    @media screen and (max-width: 1100px){
+        .landing:before {padding-top: 93.3333333333%;}
+        .samsung_s24 .landing h2 {top: 40%;left: 26%;font-size: 2.8vw;width: 53%;line-height: 5vw;}
+        .samsung_s24 .landing h1 {top: 54%;left: 13%;font-size: 3.8vw;width: 74%;line-height: 6vw;}
+
+        .samsung_s24 h1 {font-size: 3.9vw;width: 98%;}
+        .samsung_s24 p{font-size: 2.5vw;width: 60%;}
+
+        .form_s24 {
+                width: 90%;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f4f4f4;
+                box-sizing: border-box;
+                border-radius: 10px;
+            }
+
+        #galaxy_s24_form{width: 98%;position: relative;}
+        .samsung_s24 .obrigatorio{font-size: 3vw;}
+
+        .form_s24 .row{flex-direction: column;}
+        .form_s24 label{font-size: 3.5vw;margin-left: 5px;}
+        .form_s24 input {margin-bottom: 10px;padding: 8px; font-size: 3.5vw;}
+        /*#galaxy_s24_form #fast_email{text-align: center; padding: 2vw; left: 0%; font-size: 3vw; top: 58%; height: 80%; width: 100%;}
+        #galaxy_s24_form #fast_cpf{text-align: center; padding: 2vw; font-size: 3vw; width: 100%; height: 80%; top: 150%; left: 0%;}
+        #galaxy_s24_form #texto_erro{top: 235%; left: 0%;}*/
+        .samsung_s24 .texto_legal p{font-size: 3vw;}
+
+
+        #galaxy_s24_form button{ font-size: 3vw;margin-left: 0%;width: 98%; border-radius: 12px;}
+        #texto_sucesso{top: 27.8%; left: 51%; font-size: 2vw; padding: 2vw;}
+    }
+
+</style>
